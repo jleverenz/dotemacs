@@ -1,5 +1,6 @@
 
 (show-paren-mode t)
+(load-theme 'solarized-dark t)
 
 ;;
 ;; session package

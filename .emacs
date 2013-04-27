@@ -24,7 +24,8 @@
 ;; version only forces upgrade to latest when old (or no) version is
 ;; found.  No version "locking".
 (defvar required-packages 
-  '( (session (2 2 1))               ; maintain history across Emacs sessions
+  '( (session (2 2 1))                  ; maintain history across Emacs sessions
+     (color-theme-solarized (20120301)) ; nice colors
      ))
 
 (if (member nil (mapcar (lambda (pkg) 
