@@ -15,24 +15,24 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
 
-; needed for package-installed-p to work
+; needed for package-installed-p to work at startup
 (require 'package)
 (package-initialize)                    
 
-;; Packages installed -- TODO indicating versions here, but minimum
-;; version only force upgrade to latest when old version is found.  No
-;; version "locking".
+;; Packages installed -- TODO indicating versions here, but min
+;; version only forces upgrade to latest when old (or no) version is
+;; found.  No version "locking".
 (defvar required-packages 
   '( (session (2 2 1))               ; maintain history across Emacs sessions
      ))
 
 (if (member nil (mapcar (lambda (pkg) 
-                          (package-installed-p (car pkg) (cadr pkg)))
+                          (apply 'package-installed-p pkg))
                         required-packages))
     (progn
       (package-refresh-contents)
       (mapc (lambda (pkg)
-              (if (not (package-installed-p (car pkg) (cadr pkg)))
+              (if (not (apply 'package-installed-p pkg))
                   (package-install (car pkg))))
             required-packages)))
 

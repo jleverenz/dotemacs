@@ -1,3 +1,10 @@
+
+(show-paren-mode t)
+
+;;
+;; session package
+;;
+
 (session-initialize)
 
 
