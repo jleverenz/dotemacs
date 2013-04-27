@@ -13,7 +13,8 @@
 (setq-default make-backup-files nil)    ; Do not make backups on edit
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")))
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 ; needed for package-installed-p to work at startup
 (require 'package)
