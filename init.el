@@ -38,6 +38,8 @@
                   (package-install (car pkg))))
             required-packages)))
 
+
+(add-to-list 'load-path "~/.emacs.d")
 (load "init/macosx")
 (load "ext/swbuff")
 (load "lisp/utils")

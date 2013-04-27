@@ -1,3 +1,9 @@
 
 Personal .emacs customizations used by Jeff Leverenz, rebuilt (rebuilding) from
-scratch for Emacs 24.2 w/ package.el
+scratch for Emacs 24 w/ package.el
+
+Installation
+
+Clone this repo into your .emacs.d.
+~/.emacs.d/init.el is the entry point.  Make sure you don't have an older style
+~/.emacs, which will shadow the init.el.
