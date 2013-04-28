@@ -19,6 +19,14 @@
               '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 
                   84 88 92 96 100 104 108 112 116 120))
 
+; enable disabled commands
+
+(put 'narrow-to-region 'disabled nil)   ; allow buffer narrow'ing
+(put 'upcase-region 'disabled nil)      ; allow upcase'ing of regions
+(put 'downcase-region 'disabled nil)    ; allow downcase'ing of regions
+
+; themes / faces
+
 (load-theme 'solarized-dark t)
 (custom-set-faces
  '(mode-line ((t (:foreground "white" :background "gray30")))))
