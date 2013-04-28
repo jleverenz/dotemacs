@@ -57,3 +57,9 @@
 ;;
 
 (load "init/key-bindings")
+
+(require 'server)
+(when (and (functionp 'server-running-p) (or (windows-nt-p)
+                                             (not (server-running-p))))
+  (server-start)
+  (require 'emacsclient-mode))
