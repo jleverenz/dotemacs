@@ -13,6 +13,11 @@
 (setq-default make-backup-files nil)    ; Do not make backups on edit
 
 (setq-default indent-tabs-mode nil)     ; Use spaces, not TAB characters
+(setq-default fill-column 79)           ; Preserve comment column to end
+
+(setq-default tab-stop-list
+              '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 
+                  84 88 92 96 100 104 108 112 116 120))
 
 (load-theme 'solarized-dark t)
 (custom-set-faces
