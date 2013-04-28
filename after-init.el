@@ -4,6 +4,7 @@
 
 (setq-default truncate-lines 'true)     ; show truncated in display
 (show-paren-mode t)
+(setq scroll-step 1)                    ; kbd scroll one line at a time
 (load-theme 'solarized-dark t)
 (global-hl-line-mode t)                 ; turn on global highlight line
 
