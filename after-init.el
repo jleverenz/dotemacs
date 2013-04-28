@@ -1,6 +1,11 @@
-
+(setq-default truncate-lines 'true)     ; show truncated in display
 (show-paren-mode t)
 (load-theme 'solarized-dark t)
+
+(custom-set-faces
+ '(mode-line ((t (:foreground "white" :background "gray30")))))
+
+
 
 ;;
 ;; session package
