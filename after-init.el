@@ -1,6 +1,11 @@
+;;
+;; basic UI
+;;
+
 (setq-default truncate-lines 'true)     ; show truncated in display
 (show-paren-mode t)
 (load-theme 'solarized-dark t)
+(global-hl-line-mode t)                 ; turn on global highlight line
 
 (custom-set-faces
  '(mode-line ((t (:foreground "white" :background "gray30")))))
