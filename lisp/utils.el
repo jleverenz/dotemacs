@@ -15,3 +15,11 @@ column position on the new line."
     )
   (next-line 1)
   )
+
+(defun windows-nt-p ()
+  "Returns t if called on a Windows NT system."
+   (equal system-type 'windows-nt))
+
+(defun mac-osx-p ()
+  "Returns t if called on an OSX system."
+   (equal system-type 'darwin))

@@ -32,7 +32,7 @@
 
 
 (add-to-list 'load-path "~/.emacs.d")
-(load "init/macosx")
+(when (mac-osx-p) (load "init/macosx"))
 (load "ext/swbuff")
 (load "lisp/utils")
 (add-hook 'after-init-hook (lambda () (load "after-init")))
