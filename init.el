@@ -18,6 +18,7 @@
 (defvar required-packages 
   '( (session (2 2 1))                  ; maintain history across Emacs sessions
      (color-theme-solarized (20120301)) ; nice colors
+     (yaml-mode (20130311.1301))
      ))
 
 (if (member nil (mapcar (lambda (pkg) 
