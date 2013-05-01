@@ -23,3 +23,9 @@ column position on the new line."
 (defun mac-osx-p ()
   "Returns t if called on an OSX system."
    (equal system-type 'darwin))
+
+(defun adjust-width (c)
+  "Resize the frame width"
+  (interactive "nWidth for frame: ")
+  (set-frame-width (selected-frame) c)
+)
