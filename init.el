@@ -36,4 +36,8 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (load "ext/swbuff")
 (load "utils")
+
+;; eproject
+(add-to-list 'load-path "~/.emacs.d/vendor/eproject")
+
 (add-hook 'after-init-hook (lambda () (load "after-init")))
