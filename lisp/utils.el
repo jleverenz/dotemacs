@@ -30,6 +30,12 @@ column position on the new line."
   (set-frame-width (selected-frame) c)
 )
 
+(defun eval-and-replace (value)
+  "Evaluate the sexp at point and replace it with its value"
+  (interactive (list (eval-last-sexp nil)))
+  (kill-sexp -1)
+  (insert (format "%S" value)))
+
 (defun mixed-case-p (str)
   "Return t or nil indicating if STR contains any caps."
   (let ((case-fold-search nil))
