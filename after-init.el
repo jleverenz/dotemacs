@@ -8,6 +8,7 @@
 (setq scroll-step 1)                    ; kbd scroll one line at a time
 (global-hl-line-mode t)                 ; turn on global highlight line
 (show-paren-mode t)
+(adjust-width 100)                      ; wider view
 
 (global-auto-revert-mode t)		; auto revert buffers to disk changes
 (setq-default make-backup-files nil)    ; Do not make backups on edit
