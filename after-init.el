@@ -57,6 +57,7 @@
 ;;
 
 (load "init/key-bindings")
+(load "init/init-eproject")
 
 (require 'server)
 (when (and (functionp 'server-running-p) (or (windows-nt-p)

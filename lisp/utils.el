@@ -29,3 +29,14 @@ column position on the new line."
   (interactive "nWidth for frame: ")
   (set-frame-width (selected-frame) c)
 )
+
+(defun mixed-case-p (str)
+  "Return t or nil indicating if STR contains any caps."
+  (let ((case-fold-search nil))
+    (if (string-match "[A-Z]" str) t nil)))
+
+(defun smart-grep-args (search-string)
+  "Check case of argument, and return the correct args for a grep call."
+  (format "%s '%s'"
+          (if (mixed-case-p search-string) "-e" "-i -e")
+          search-string))
