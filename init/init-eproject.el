@@ -2,15 +2,16 @@
 
 (require 'eproject)
 (require 'eproject-extras)
+(require 'eproject-selectors)
 (require 'eproject-find-cmd)
 (require 'anything)
 (require 'anything-config)
 (require 'grep)
 
-(define-project-type find-cmd-project (generic)
-  (look-for ".find-cmd-project")
-  :find-cmd-sexp (and (prune (name ".scratch"))
-                      (and (type "f"))))
+(define-project-type dotemacs (generic) 
+  (eproject-select-by-path-match "/dotemacs/" ".*/\.emacs\.d/")
+  :find-cmd-sexp (and (prune (name ".git" ".session" "auto-save-list" "elpa"))
+                      (and (not (name ".session")) (type "f"))))
 
 (defun eproject-find-cmd-custom-find-grep ()
   (interactive)
