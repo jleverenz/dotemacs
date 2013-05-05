@@ -17,7 +17,7 @@
 (setq-default fill-column 79)           ; Preserve comment column to end
 
 (setq-default tab-stop-list
-              '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 
+              '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80
                   84 88 92 96 100 104 108 112 116 120))
 
 (when (mac-osx-p) (load "init/macosx"))
@@ -35,7 +35,6 @@
  '(mode-line ((t (:foreground "white" :background "gray30")))))
 
 
-
 ;;
 ;; session package
 ;;
@@ -51,6 +50,14 @@
 (setq swbuff-exclude-buffer-regexps '("^ " "^\*.*\*")) ; ignore some buffers
 (setq swbuff-clear-delay 1)
 (setq swbuff-separator " | ")
+
+
+;;
+;; whitespace: nuke whitespaces when writing to a file
+;;
+
+(setq whitespace-style '(empty trailing))
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 
 ;;
