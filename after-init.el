@@ -46,10 +46,12 @@
 ;; swbuff - buffer switching
 ;;
 
-(require 'swbuff)                       ; allow fast fwd/back buffer switching
+(require 'swbuff-x)                       ; allow fast fwd/back buffer switching
 (setq swbuff-exclude-buffer-regexps '("^ " "^\*.*\*")) ; ignore some buffers
+(setq swbuff-include-buffer-regexps '("^\*scratch\*"))
 (setq swbuff-clear-delay 1)
-(setq swbuff-separator " | ")
+(setq swbuff-separator "   ")
+(setq swbuff-display-intermediate-buffers t)
 
 
 ;;
@@ -65,7 +67,7 @@
 ;;
 
 ; Make buffer switching nicer by allowing partial buffer-name entry.  This is
-; part of emacs.  Used with swbuff, pretty powerful.
+; part of emacs.
 
 (iswitchb-mode)
 (defun iswitchb-local-keys ()
