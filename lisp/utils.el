@@ -1,6 +1,6 @@
 ;; TODO: if there is a region, copy the region down instead
 (defun copy-line-down ()
-  "Insert a copy of the current line below itself, and move point to same 
+  "Insert a copy of the current line below itself, and move point to same
 column position on the new line."
   (interactive)
   (save-excursion

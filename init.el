@@ -10,19 +10,19 @@
 
 ; needed for package-installed-p to work at startup
 (require 'package)
-(package-initialize)                    
+(package-initialize)
 
 ;; Packages installed -- TODO indicating versions here, but min
 ;; version only forces upgrade to latest when old (or no) version is
 ;; found.  No version "locking".
-(defvar required-packages 
+(defvar required-packages
   '( (session (2 2 1))                  ; maintain history across Emacs sessions
      (color-theme-solarized (20120301)) ; nice colors
      (yaml-mode (20130311 1301))
      (anything (20130323 1652))
      ))
 
-(if (member nil (mapcar (lambda (pkg) 
+(if (member nil (mapcar (lambda (pkg)
                           (apply 'package-installed-p pkg))
                         required-packages))
     (progn
