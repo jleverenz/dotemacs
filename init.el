@@ -21,6 +21,7 @@
      (yaml-mode (20130311 1301))
      (anything (20130323 1652))
      (swbuff-x (20130607 1014))
+     (cygwin-mount (2001))
      ))
 
 (if (member nil (mapcar (lambda (pkg)

@@ -21,6 +21,7 @@
                   84 88 92 96 100 104 108 112 116 120))
 
 (when (mac-osx-p) (load "init/macosx"))
+(when (windows-nt-p) (load "init/windows"))
 
 ; enable disabled commands
 
