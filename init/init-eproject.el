@@ -8,7 +8,7 @@
 (require 'anything-config)
 (require 'grep)
 
-(define-project-type dotemacs (generic) 
+(define-project-type dotemacs (generic)
   (eproject-select-by-path-match "/dotemacs/" ".*/\.emacs\.d/")
   :find-cmd-sexp (and (prune (name ".git" ".session" "auto-save-list" "elpa"))
                       (and (not (name ".session")) (type "f"))))
@@ -40,7 +40,7 @@
                                                    anything-source-eproject--root)))
     (type . file)
     (requires-pattern . 4)
-    ;(delayed)
+    (delayed)
     ))
 
 (defun anything-selector ()
