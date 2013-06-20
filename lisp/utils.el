@@ -51,3 +51,8 @@ column position on the new line."
   (interactive)
   (switch-to-buffer "*scratch*")
   )
+
+;; static-scroll-* scrolls a window, keeping the point on the same line.
+
+(defun static-scroll-down () (interactive) (scroll-down 1))
+(defun static-scroll-up () (interactive) (scroll-up 1))

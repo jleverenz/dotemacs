@@ -14,3 +14,6 @@
 (global-set-key [(control c)(down)] 'copy-line-down)
 (global-set-key [(control c)(s)] 'sort-lines)
 (global-set-key [(control meta return)] 'eval-and-replace)
+
+(global-set-key [(meta down)] 'static-scroll-up)
+(global-set-key [(meta up)] 'static-scroll-down)
