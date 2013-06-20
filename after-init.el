@@ -83,6 +83,11 @@
 
 (add-hook 'iswitchb-define-mode-map-hook 'iswitchb-local-keys)
 
+;; Support for "private" .emacs pieces -- put anything sort of sensitive in
+;; here.
+(load "~/.emacs.d.private/init.el" t)   ; skip if missing
+
+
 ;;
 ;; finish configuration
 ;;
