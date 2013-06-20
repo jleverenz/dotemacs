@@ -30,3 +30,5 @@
 (cygwin-mount-activate)
 
 (setenv "nodosfilewarning" "1")
+
+(setq tramp-default-method "plink")     ; use plink for tramp on windows
