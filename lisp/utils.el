@@ -46,3 +46,8 @@ column position on the new line."
   (format "%s '%s'"
           (if (mixed-case-p search-string) "-e" "-i -e")
           search-string))
+
+(defun goto-scratch-buffer ()
+  (interactive)
+  (switch-to-buffer "*scratch*")
+  )

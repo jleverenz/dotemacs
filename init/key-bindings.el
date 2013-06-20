@@ -1,4 +1,5 @@
 
+(global-set-key [f8] 'goto-scratch-buffer)
 (global-set-key [f12] 'revert-buffer)
 
 ; switch back & forth through buffers
