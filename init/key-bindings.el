@@ -1,4 +1,6 @@
 
+(global-set-key [f5] 'goto-line)
+(global-set-key [f6] 'toggle-read-only)
 (global-set-key [f8] 'goto-scratch-buffer)
 (global-set-key [f12] 'revert-buffer)
 
