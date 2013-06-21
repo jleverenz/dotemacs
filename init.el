@@ -22,6 +22,8 @@
      (anything (20130323 1652))
      (swbuff-x (20130607 1014))
      (cygwin-mount (2001))
+     (gist (20130315 2306))
+     (rvm (20130521 902))
      ))
 
 (if (member nil (mapcar (lambda (pkg)
