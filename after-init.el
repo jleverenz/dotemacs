@@ -83,17 +83,17 @@
 
 (add-hook 'iswitchb-define-mode-map-hook 'iswitchb-local-keys)
 
-;; Support for "private" .emacs pieces -- put anything sort of sensitive in
-;; here.
-(load "~/.emacs.d.private/init.el" t)   ; skip if missing
-
-
 ;;
 ;; finish configuration
 ;;
 
 (load "init/key-bindings")
 (load "init/init-eproject")
+
+;; Support for "private" .emacs pieces -- put anything sort of sensitive in
+;; here.
+(load "~/.emacs.d.private/init.el" t)   ; skip if missing
+
 
 (require 'server)
 (when (and (functionp 'server-running-p) (or (windows-nt-p)
