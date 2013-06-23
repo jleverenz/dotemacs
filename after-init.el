@@ -5,8 +5,8 @@
 (setq ring-bell-function (lambda ()))	; no bells, audible or visible
 (setq column-number-mode t)             ; col #'s in the mode-line
 (setq-default truncate-lines 'true)     ; show truncated in display
-(setq scroll-step 0
-      scroll-conservatively 10000)      ; kbd scroll 1 line at a time, no jumps
+(setq scroll-conservatively 10000)
+(setq auto-window-vscroll nil)
 (global-hl-line-mode t)                 ; turn on global highlight line
 (show-paren-mode t)
 (adjust-width 100)                      ; wider view
