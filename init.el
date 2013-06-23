@@ -24,6 +24,7 @@
      (cygwin-mount (2001))
      (gist (20130315 2306))
      (rvm (20130521 902))
+     (haml-mode (20130130 1622))
      ))
 
 (if (member nil (mapcar (lambda (pkg)
