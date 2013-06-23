@@ -90,6 +90,11 @@
 (load "init/key-bindings")
 (load "init/init-eproject")
 
+;; Turn off truncate-lines in compiles to see output easily.
+(add-hook 'compilation-mode-hook (lambda ()
+                                   (make-local-variable 'truncate-lines)
+                                   (setq truncate-lines nil)))
+
 ;; Support for "private" .emacs pieces -- put anything sort of sensitive in
 ;; here.
 (load "~/.emacs.d.private/init.el" t)   ; skip if missing
