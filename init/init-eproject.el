@@ -2,6 +2,7 @@
 
 (require 'eproject)
 (require 'eproject-extras)
+(require 'eproject-compile)
 (require 'eproject-selectors)
 (require 'eproject-find-cmd)
 (require 'anything)
@@ -55,7 +56,10 @@ whatever makes sense for the current buffer."
 
 (add-hook 'eproject-mode-hook
           (lambda ()
-            (define-key eproject-mode-map (kbd "C-,") 'eproject-find-cmd-custom-find-grep)))
-(add-hook 'eproject-mode-hook
-          (lambda ()
-            (define-key eproject-mode-map (kbd "C-.") 'anything-selector)))
+            (define-key eproject-mode-map (kbd "C-,") 'eproject-find-cmd-custom-find-grep)
+            (define-key eproject-mode-map (kbd "C-.") 'anything-selector)
+            (define-key eproject-mode-map [(control return)]
+              '(lambda (arg) (interactive "P")
+                 (save-some-buffers t)
+                 (if arg (eproject-compile)
+                   (eproject-compile-repeat))))))
