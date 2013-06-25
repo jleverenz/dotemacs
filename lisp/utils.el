@@ -36,6 +36,14 @@ column position on the new line."
   (kill-sexp -1)
   (insert (format "%S" value)))
 
+(defun save-buffer-with-whitespace ()
+  "Run `save-buffer` after setting whitespace-style to
+nil. Useful for temporarily overriding whitespace stripping when
+making nice patches."
+  (interactive)
+  (let ((whitespace-style nil))
+    (save-buffer)))
+
 (defun mixed-case-p (str)
   "Return t or nil indicating if STR contains any caps."
   (let ((case-fold-search nil))
