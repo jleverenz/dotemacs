@@ -56,6 +56,10 @@
 (setq swbuff-display-intermediate-buffers t)
 
 
+;; uniquify - make nicer buffer names
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
 ;;
 ;; whitespace: nuke whitespaces when writing to a file
 ;;
