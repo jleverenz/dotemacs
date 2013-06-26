@@ -93,6 +93,7 @@
 
 (load "init/key-bindings")
 (load "init/init-eproject")
+(load "init/auto-modes")
 
 ;; Turn off truncate-lines in compiles to see output easily.
 (add-hook 'compilation-mode-hook (lambda ()
