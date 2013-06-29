@@ -1,3 +1,6 @@
 [submodule "vendor/eproject"]
 	path = vendor/eproject
 	url = https://github.com/jleverenz/eproject.git
+[submodule "vendor/swbuff"]
+	path = vendor/swbuff
+	url = https://github.com/jleverenz/swbuff.git

@@ -20,7 +20,6 @@
      (color-theme-solarized (20120301)) ; nice colors
      (yaml-mode (20130311 1301))
      (anything (20130323 1652))
-     (swbuff-x (20130607 1014))
      (cygwin-mount (2001))
      (gist (20130315 2306))
      (rvm (20130521 902))
@@ -42,7 +41,8 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (load "utils")
 
-;; eproject
+;; un-packaged packages
 (add-to-list 'load-path "~/.emacs.d/vendor/eproject")
+(add-to-list 'load-path "~/.emacs.d/vendor/swbuff")
 
 (add-hook 'after-init-hook (lambda () (load "after-init")))
