@@ -13,6 +13,7 @@
 
 (global-auto-revert-mode t)		; auto revert buffers to disk changes
 (setq-default make-backup-files nil)    ; Do not make backups on edit
+(setq vc-cvs-stay-local nil)            ; Turn off local CVS version backup files
 
 (setq-default indent-tabs-mode nil)     ; Use spaces, not TAB characters
 (setq-default fill-column 79)           ; Preserve comment column to end
