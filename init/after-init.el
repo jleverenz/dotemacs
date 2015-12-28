@@ -22,8 +22,8 @@
               '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80
                   84 88 92 96 100 104 108 112 116 120))
 
-(when (mac-osx-p) (load "init/macosx"))
-(when (windows-nt-p) (load "init/windows"))
+(when (mac-osx-p) (load "macosx"))
+(when (windows-nt-p) (load "windows"))
 
 ; enable disabled commands
 
@@ -91,9 +91,9 @@
 ;; finish configuration
 ;;
 
-(load "init/key-bindings")
-(load "init/init-eproject")
-(load "init/auto-modes")
+(load "key-bindings")
+(load "init-eproject")
+(load "auto-modes")
 
 ;; Turn off truncate-lines in compiles to see output easily.
 (add-hook 'compilation-mode-hook (lambda ()
