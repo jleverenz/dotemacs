@@ -7,7 +7,6 @@
 (setq-default truncate-lines 'true)     ; show truncated in display
 (setq scroll-conservatively 10000)
 (setq auto-window-vscroll nil)
-(global-hl-line-mode t)                 ; turn on global highlight line
 (show-paren-mode t)
 (adjust-width 100)                      ; wider view
 
@@ -33,9 +32,8 @@
 
 ; themes / faces
 
-(load-theme 'solarized-dark t)
-(custom-set-faces
- '(mode-line ((t (:foreground "white" :background "gray30")))))
+(load-theme 'tango-dark)
+(require 'highlight-current-line)
 
 
 ;;

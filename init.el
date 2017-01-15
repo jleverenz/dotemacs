@@ -17,7 +17,6 @@
 ;; found.  No version "locking".
 (defvar required-packages
   '( (session (2 2 1))                  ; maintain history across Emacs sessions
-     (color-theme-solarized (20120301)) ; nice colors
      (yaml-mode (20130311 1301))
      (anything (20130323 1652))
      (cygwin-mount (2001))
@@ -46,3 +45,25 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/swbuff")
 
 (add-hook 'after-init-hook (lambda () (load "after-init")))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(highlight-current-line-globally t nil (highlight-current-line))
+ '(package-selected-packages
+   (quote
+    (highlight-current-line go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode anything)))
+ '(session-use-package t nil (session)))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(highlight-current-line-face ((t (:background "grey25"))))
+ '(mode-line ((t (:foreground "white" :background "gray30")))))
