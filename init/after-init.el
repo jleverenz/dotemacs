@@ -42,6 +42,11 @@
 
 (session-initialize)
 
+;;
+;; helm
+;;
+
+(require 'helm-config)
 
 ;;
 ;; swbuff - buffer switching

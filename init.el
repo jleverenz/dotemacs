@@ -18,7 +18,6 @@
 (defvar required-packages
   '( (session (2 2 1))                  ; maintain history across Emacs sessions
      (yaml-mode (20130311 1301))
-     (anything (20130323 1652))
      (cygwin-mount (2001))
      (gist (20130315 2306))
      (rvm (20130521 902))
@@ -57,7 +56,7 @@
  '(highlight-current-line-globally t nil (highlight-current-line))
  '(package-selected-packages
    (quote
-    (highlight-current-line go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode anything)))
+    (helm highlight-current-line go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode)))
  '(session-use-package t nil (session)))
 
 (custom-set-faces
