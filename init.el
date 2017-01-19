@@ -56,7 +56,7 @@
  '(highlight-current-line-globally t nil (highlight-current-line))
  '(package-selected-packages
    (quote
-    (helm highlight-current-line go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode)))
+    (cider helm highlight-current-line go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode)))
  '(session-use-package t nil (session)))
 
 (custom-set-faces

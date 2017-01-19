@@ -1,3 +1,6 @@
+;; basic environment
+(add-to-list 'exec-path (concat (getenv "HOME") "/bin"))
+
 ;;
 ;; basic UI
 ;;
@@ -94,6 +97,7 @@
 ;; finish configuration
 ;;
 
+(load "cider-init")
 (load "eproject-init")
 
 (load "auto-modes")
