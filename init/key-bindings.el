@@ -7,7 +7,7 @@
 (global-set-key [(control meta left)] 'swbuff-switch-to-next-buffer)
 (global-set-key [(control meta right)] 'swbuff-switch-to-previous-buffer)
 
-(global-set-key [(control x)(b)] 'helm-buffers-list)
+(global-set-key [(control x)(b)] 'helm-mini)
 
 (global-set-key [(control meta up)] 'previous-error)
 (global-set-key [(control meta down)] 'next-error)

@@ -74,6 +74,15 @@
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;;
+;; recentf
+;;
+
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 50)
+(add-to-list 'recentf-exclude "\\COMMIT_EDITMSG\\'")
+
+;;
 ;; finish configuration
 ;;
 
