@@ -1,4 +1,3 @@
-
 (global-set-key [f5] 'goto-line)
 (global-set-key [f6] 'toggle-read-only)
 (global-set-key [f8] 'goto-scratch-buffer)
@@ -7,6 +6,8 @@
 ; switch back & forth through buffers
 (global-set-key [(control meta left)] 'swbuff-switch-to-next-buffer)
 (global-set-key [(control meta right)] 'swbuff-switch-to-previous-buffer)
+
+(global-set-key [(control x)(b)] 'helm-buffers-list)
 
 (global-set-key [(control meta up)] 'previous-error)
 (global-set-key [(control meta down)] 'next-error)
