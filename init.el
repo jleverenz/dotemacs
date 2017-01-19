@@ -37,11 +37,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/init")
 (add-to-list 'load-path "~/.emacs.d/lisp")
+(add-to-list 'load-path "~/.emacs.d/vendor/swbuff") ; modified version
 (load "utils")
-
-;; un-packaged packages
-(add-to-list 'load-path "~/.emacs.d/vendor/eproject")
-(add-to-list 'load-path "~/.emacs.d/vendor/swbuff")
 
 (add-hook 'after-init-hook (lambda () (load "after-init")))
 

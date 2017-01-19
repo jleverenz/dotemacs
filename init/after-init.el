@@ -87,10 +87,18 @@
 ;;
 
 (load "cider-init")
-(load "eproject-init")
 
 (load "auto-modes")
 (load "key-bindings")
+
+;; The following makes certain packages not load by default, but can be started
+;; if needed.
+
+(defun init-eproject-package ()
+  "Load the eproject package and configuration."
+  (interactive)
+  (add-to-list 'load-path "~/.emacs.d/vendor/eproject")
+  (load "eproject-init"))
 
 ;; Turn off truncate-lines in compiles to see output easily.
 (add-hook 'compilation-mode-hook (lambda ()
