@@ -94,9 +94,10 @@
 ;; finish configuration
 ;;
 
-(load "key-bindings")
-(load "init-eproject")
+(load "eproject-init")
+
 (load "auto-modes")
+(load "key-bindings")
 
 ;; Turn off truncate-lines in compiles to see output easily.
 (add-hook 'compilation-mode-hook (lambda ()
