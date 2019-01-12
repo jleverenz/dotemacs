@@ -50,6 +50,7 @@
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(global-hl-line-mode t)
+ '(js-indent-level 2)
  '(package-selected-packages
    (quote
     (helm go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode)))
