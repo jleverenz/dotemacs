@@ -5,7 +5,6 @@
 (setq inhibit-splash-screen t)          ; do not display splash on start-up
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 ; needed for package-installed-p to work at startup
@@ -50,10 +49,10 @@
  '(custom-safe-themes
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
- '(highlight-current-line-globally t nil (highlight-current-line))
+ '(global-hl-line-mode t)
  '(package-selected-packages
    (quote
-    (cider helm highlight-current-line go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode)))
+    (helm go-mode jsx-mode yaml-mode swift-mode session rvm haml-mode gist cygwin-mount clojure-mode clj-mode)))
  '(session-use-package t nil (session)))
 
 (custom-set-faces
@@ -61,5 +60,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(highlight-current-line-face ((t (:background "grey25"))))
+ '(hl-line ((t (:background "grey25"))))
  '(mode-line ((t (:foreground "white" :background "gray30")))))

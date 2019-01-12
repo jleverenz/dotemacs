@@ -36,8 +36,6 @@
 ; themes / faces
 
 (load-theme 'tango-dark)
-(require 'highlight-current-line)
-
 
 ;;
 ;; session package
@@ -85,8 +83,6 @@
 ;;
 ;; finish configuration
 ;;
-
-(load "cider-init")
 
 (load "auto-modes")
 (load "key-bindings")
