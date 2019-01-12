@@ -61,5 +61,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(hl-line ((t (:background "grey25"))))
+ '(default ((t (:inherit nil :stipple nil :background "#111" :foreground "#eeeeec" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Menlo"))))
+ '(hl-line ((t (:background "grey15"))))
  '(mode-line ((t (:foreground "white" :background "gray30")))))
