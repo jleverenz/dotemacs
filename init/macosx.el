@@ -6,3 +6,7 @@
 (setq mac-right-command-modifier 'none)
 
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+
+;; set $MANPATH, $PATH and exec-path from user shell
+;;   https://github.com/purcell/exec-path-from-shell
+(exec-path-from-shell-initialize)

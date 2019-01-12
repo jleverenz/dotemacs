@@ -25,8 +25,3 @@
 (global-set-key [(meta prior)] '(lambda () (interactive) (scroll-other-window -1)))
 (global-set-key [(control meta next)] '(lambda () (interactive) (scroll-other-window)))
 (global-set-key [(control meta prior)] '(lambda () (interactive) (scroll-other-window '-)))
-
-;; remap C-l to delete other windows as well
-(global-set-key [(control l)] '(lambda () (interactive)
-                                       (delete-other-windows)
-                                       (recenter-top-bottom)))

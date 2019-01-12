@@ -20,9 +20,7 @@
 (setq-default indent-tabs-mode nil)     ; Use spaces, not TAB characters
 (setq-default fill-column 79)           ; Preserve comment column to end
 
-(setq-default tab-stop-list
-              '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80
-                  84 88 92 96 100 104 108 112 116 120))
+(setq-default tab-stop-list (number-sequence 4 120 4))  ; 4 8 12 ....
 
 (when (mac-osx-p) (load "macosx"))
 (when (windows-nt-p) (load "windows"))
@@ -44,12 +42,6 @@
 (session-initialize)
 
 ;;
-;; helm
-;;
-
-(require 'helm-config)
-
-;;
 ;; swbuff - buffer switching
 ;;
 
@@ -65,7 +57,7 @@
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
 
 ;;
-;; whitespace: nuke whitespaces when writing to a file
+;; whitespace: nuke whitespaces when writing to a file (part of Emacs)
 ;;
 
 (setq whitespace-style '(empty trailing))
@@ -86,15 +78,6 @@
 
 (load "auto-modes")
 (load "key-bindings")
-
-;; The following makes certain packages not load by default, but can be started
-;; if needed.
-
-(defun init-eproject-package ()
-  "Load the eproject package and configuration."
-  (interactive)
-  (add-to-list 'load-path "~/.emacs.d/vendor/eproject")
-  (load "eproject-init"))
 
 ;; Turn off truncate-lines in compiles to see output easily.
 (add-hook 'compilation-mode-hook (lambda ()
