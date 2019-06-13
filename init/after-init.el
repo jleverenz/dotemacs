@@ -61,6 +61,7 @@
 
 (load "auto-modes")
 (load "key-bindings")
+(load "cycle-frame-size")
 
 ;; Turn off truncate-lines in compiles to see output easily.
 (add-hook 'compilation-mode-hook (lambda ()
