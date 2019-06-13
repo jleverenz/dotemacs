@@ -14,7 +14,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/init")
 (add-to-list 'load-path "~/.emacs.d/lisp")
-(add-to-list 'load-path "~/.emacs.d/vendor/swbuff") ; modified version
 (mapcar 'load
         '("utils"
           "projectile-init"
@@ -32,12 +31,13 @@
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(global-hl-line-mode t)
+ '(helm-buffer-max-length nil)
  '(js-indent-level 2)
  '(line-spacing 0.25)
  '(package-selected-packages
    (quote
-    (exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm session)))
- '(session-use-package t nil (session)))
+    (dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
+ '(typescript-indent-level 2))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

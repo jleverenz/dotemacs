@@ -35,23 +35,6 @@
 
 (load-theme 'tango-dark)
 
-;;
-;; session package
-;;
-
-(session-initialize)
-
-;;
-;; swbuff - buffer switching
-;;
-
-(require 'swbuff)                       ; allow fast fwd/back buffer switching
-(setq swbuff-exclude-buffer-regexps '("^ " "^\*.*\*")) ; ignore some buffers
-(setq swbuff-include-buffer-regexps '("^\*scratch\*"))
-(setq swbuff-clear-delay 1)
-(setq swbuff-separator "   ")
-
-
 ;; uniquify - make nicer buffer names
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
