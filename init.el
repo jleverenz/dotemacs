@@ -38,7 +38,7 @@
  '(line-spacing 0.25)
  '(package-selected-packages
    (quote
-    (auto-complete dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
+    (tuareg auto-complete dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
  '(typescript-indent-level 2))
 
 (custom-set-faces

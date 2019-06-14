@@ -25,6 +25,9 @@
 (when (mac-osx-p) (load "macosx"))
 (when (windows-nt-p) (load "windows"))
 
+(mapcar 'load
+        '("opam-merlin-init.el"))
+
 ; enable disabled commands
 
 (put 'narrow-to-region 'disabled nil)   ; allow buffer narrow'ing
