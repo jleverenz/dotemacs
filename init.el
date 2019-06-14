@@ -17,6 +17,7 @@
 (mapcar 'load
         '("utils"
           "projectile-init"
+          "elpy-init"
           "helm-init"))
 
 (add-hook 'after-init-hook (lambda () (load "after-init")))
