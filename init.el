@@ -16,6 +16,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (mapcar 'load
         '("utils"
+          "auto-complete-init"
           "projectile-init"
           "elpy-init"
           "helm-init"))
@@ -37,7 +38,7 @@
  '(line-spacing 0.25)
  '(package-selected-packages
    (quote
-    (dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
+    (auto-complete dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
  '(typescript-indent-level 2))
 
 (custom-set-faces
