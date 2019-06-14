@@ -1,6 +1,9 @@
+.emacs.desktop*
 .session
-recentf
+ac-comphist.dat
 anything-c-adaptive-history
+projectile-bookmarks.eld
+recentf
 auto-save-list/
 elpa/
 server/
