@@ -6,6 +6,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 (add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/")
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 (tool-bar-mode -1)                      ; no thanks, tool bar
@@ -38,7 +39,7 @@
  '(line-spacing 0.25)
  '(package-selected-packages
    (quote
-    (tuareg auto-complete dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
+    (graphql-mode tuareg auto-complete dockerfile-mode typescript-mode php-mode exec-path-from-shell json-mode js-comint markdown-mode gitignore-mode rjsx-mode elpy ensime helm-projectile projectile ripgrep yafolding scala-mode yaml-mode helm)))
  '(typescript-indent-level 2))
 
 (custom-set-faces
