@@ -1,4 +1,3 @@
-(require 'helm-config)
 (require 'helm-projectile)
 
 (setq helm-mini-default-sources '(helm-source-buffers-list
