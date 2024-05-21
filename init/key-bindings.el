@@ -25,3 +25,5 @@
 (global-set-key [(meta prior)] '(lambda () (interactive) (scroll-other-window -1)))
 (global-set-key [(control meta next)] '(lambda () (interactive) (scroll-other-window)))
 (global-set-key [(control meta prior)] '(lambda () (interactive) (scroll-other-window '-)))
+
+(global-set-key [(meta h)] 'ns-do-hide-emacs)
